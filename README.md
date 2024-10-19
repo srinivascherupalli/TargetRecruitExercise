@@ -1,18 +1,14 @@
-# Salesforce DX Project: Next Steps
+# Target Recruit Exercise
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+This git repo is having a LWC component and suporting apex class.
 
-## How Do You Plan to Deploy Your Changes?
+Assume the requirement to display selected fields of a child object records in the Lighting Card format on a parent record page using LWC component. 
+This LWC component is generic and accept any object name and fields to display as long as there is relationship between to the parent object of the record page it was added. 
+So for ex: Let us assume Account and Contact are the related objects, where Account object is the parent of Contact object, so now to display the contact object specified fields on the Account record page inside the Lighting card use the attached files.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+Steps: 
 
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+1. Open Account (Or any object) record page
+2. Add the LWC component "Card" to the record page and configure the required values like "Object Name":"Contact", "Related Field API Name":"AccountId", "Fields To display":"FirstName, LastName, Email"
+3. Save the changes and reload the page
+   
