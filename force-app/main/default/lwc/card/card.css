@@ -1,0 +1,30 @@
+.card-div {
+    margin: 10px;
+}
+
+.card-item {
+    padding: 10px;
+}
+
+.card-item .left {
+    padding: 10px;
+    display: block;
+    background-color: cadetblue;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card-item .right {
+    padding: 10px;
+    display: block;
+    background-color:beige;
+    font-size: 20px;
+}
+
+.error-msg {
+    padding: 10px;
+    display: block;
+    background-color:beige;
+    font-size: 20px;
+    color:red;
+}

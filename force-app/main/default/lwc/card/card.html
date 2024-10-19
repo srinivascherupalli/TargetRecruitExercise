@@ -1,0 +1,26 @@
+<template>
+    <template if:true={isRecordExists}>
+        <template for:each={recordList} for:item="record">
+            <lightning-card  variant="Narrow"  title={record.Id} icon-name="standard:account" key={record.Id} class="card-div">
+                <template for:each={record.fields} for:item="field">
+                    <div key={field.apiName} class="card-item">
+                        <div class="left">
+                            {field.apiName}
+                        </div>
+    
+                        <div class="right">
+                            {field.value}
+                        </div>
+                    </div>
+                </template>
+            </lightning-card>
+        </template>
+    </template>
+
+    <template if:false={isRecordExists}>
+        <div class="error-msg">
+            {defaultMsg}
+        </div>
+    </template>
+    
+</template>
